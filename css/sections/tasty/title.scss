@@ -1,0 +1,89 @@
+.tasty  {
+  background: -webkit-linear-gradient(left,#c8c9c7 0,#e9e7e8 100%);
+  background: linear-gradient(to right,#c8c9c7 0,#e9e7e8 100%);
+  font-size: 0;
+}
+
+.tasty-title__wrap, .tasty-pics__wrap  {
+  @include  inlineblock(middle);
+  font-size: 16px;
+}
+
+.tasty-title__wrap  {
+  max-width: 60% ;
+}
+
+.tasty-title  {
+  @include malina();
+  color: #2b2f5f;
+  font-size: 62px;
+  line-height: 1.2;
+}
+
+.tasty-title__description {
+  max-width: 400px;
+  font-size: 15px;
+  font-family: "Arial";
+  color: $grey;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.tasty-pics__wrap {
+
+}
+
+.tasty__list  {
+  text-align: justify;
+  font-size:  0;
+}
+
+.list-item__img {
+  @include  inlineblock(middle);
+  background-image: url("../pics/cupcake/icons/spritetasty.png");
+  background-repeat: no-repeat;
+  width: 115px;
+  height: 115px;
+}
+
+.list-item__img-weed  {
+  background-position: -121px 0;
+}
+
+.list-item__img-heart {
+  background-position: -244px 0;
+}
+
+.tasty__list-item {
+  @include  inlineblock(middle);
+  @include malina();
+  text-align: left;
+  width: 25%;
+  margin-right: 50px;
+}
+
+.list-item__description {
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: 16px;
+  color: $grey;
+}
+
+.tasty-pics__wrap {
+  //max-width: 50%;
+}
+
+.tasty__cook {
+  @include  inlineblock(middle);
+  max-width: 40%;
+  padding-top: 40px;
+}
+
+.tasty__cook-img  {
+  //@include  inlineblock(middle);
+  background-image: url("../pics/cupcake/cooker.png");
+  background-repeat: no-repeat;
+  width: 382px;
+  height: 708px;
+}

@@ -1,0 +1,66 @@
+.deliver  {
+  text-align: center;
+  background-image: url(../pics/cupcake/patterns/deliver.jpg);
+  padding-top: 90px;
+  padding-bottom: 81px;
+}
+
+.deliver__title-text, .deliver__list-title  {
+  color: $dgrey;
+  @include malina();
+}
+
+
+.deliver__title-text  {
+  font-size: 62px;
+}
+
+.deliver__list  {
+  font-size: 0;
+  margin-left: -45px;
+}
+
+.deliver__list-title  {
+  font-size: 32px;
+}
+
+.deliver__list-item {
+  @include  inlineblock();
+  width: 24.5%;
+}
+
+.deliver__list-description, .deliver__title-description  {
+  color: $red;
+}
+
+.deliver__title-description {
+  padding-bottom: 20px;
+  font-size: 16px;
+  max-width:  855px;
+  display: inline-block;
+}
+
+.inner-link {
+  text-decoration: underline;
+  color: $dgrey;
+}
+
+.deliver__list-description  {
+  display: inline-block;
+  font-size: 14px;
+  max-width: 225px;
+}
+
+.deliver__list-pic  {
+  @include  inlineblock();
+  width: 220px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@each $picture in (cake, cookies, donut, roulette, marshmellow, choco, cupcake, candy) {
+  .deliver__list-pic_#{$picture} {
+    background-image: url('../pics/cupcake/groceries/#{$picture}.png');
+  }
+}

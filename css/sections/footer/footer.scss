@@ -1,0 +1,83 @@
+.container  {
+  @extend %clearfix;
+}
+
+.footer__logo-icon  {
+  width: 65px;
+  height: 60px;
+  background-size: contain;
+}
+
+.footer__logo-text  {
+  font-size: 29px;
+}
+
+.footer__left {
+  width: 20%;
+}
+
+
+.footer__logo {
+  padding-top: 30px;
+}
+
+.footer__left, .footer__middle, .footer__right  {
+  float: left;
+}
+
+.footer__middle {
+  margin-left: 50px;
+  width: 49%;
+  padding-top: 50px;
+}
+
+.footer__middle-copyright, .footer__middle-address {
+  font-size: 14px;
+  font-family: "Arial";
+  color: $grey;
+  line-height: 1.2;
+}
+
+.footer__middle-address {
+  margin-left: 30px;
+}
+
+.footer__right  {
+  width: 20%;
+  margin-left: 40px;
+}
+
+.right-list__item {
+  display: inline-block;
+  padding-top: 50px;
+  position: relative;
+}
+
+.right-list__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.right-list__link-icon  {
+  background-size: contain;
+  width: 22px;
+  height: 22px;
+  max-height: 100%;
+  margin: auto;
+  transition: 0.3s;
+}
+
+@each $social in (facebook, instagram, ok, twitter, vk) {
+  .right-list__link-icon--#{$social} {
+    background: url('../pics/cupcake/icons/#{$social}.png') 0 0 no-repeat;
+
+    &:hover {
+      background: url('../pics/cupcake/icons/#{$social}-hover.png') 0 0 no-repeat;
+    }
+  }
+}
+
+.right-list__link-icon--ok  {
+  width: 12px;
+}

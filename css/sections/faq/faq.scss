@@ -1,0 +1,65 @@
+.faq  {
+  background: url("../pics/cupcake/faq.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 90px 0 0 0;
+}
+
+.faq__title {
+  @include malina();
+  color: #fff;
+  text-align: center;
+  font-size:  40px;
+  margin-bottom: 59px;
+}
+
+.accordion__wrap {
+  min-height: 500px;
+  padding: 0 60px;
+}
+
+.accordion__item-link-num, .accordion__item-link-title {
+  display: inline-block;
+  font-size:  22px;
+  color: #fff;
+}
+
+
+.accordion__item-link-title {
+  border-bottom: 2px dashed #fff;
+}
+
+
+.accordion__wrap-top  {
+  padding-bottom: 30px;
+}
+
+.accordion__wrap-bot  {
+  display: none;
+  font-size: 15px;
+  font-family: "Arial";
+  color: #fff;
+  line-height: 1.4;
+  padding: 0 0 20px 60px;
+
+  & p {
+    margin: 0px 0 10px 0;
+  }
+
+}
+
+.accordion__item-link  {
+  &:hover {
+    .accordion__item-link-num, .accordion__item-link-title  {
+      border-bottom: 2px dashed transparent;
+      color: $yellow;
+    }
+  }
+}
+
+.active {
+  display: block;
+  .accordion__item-link-num, .accordion__item-link-title  {
+    border-bottom: 2px dashed transparent;
+    color: $yellow;
+  }
+}

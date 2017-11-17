@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'als_malina';
+    src: url('../fonts/malina_1-webfont.woff2') format('woff2'),
+         url('../fonts/malina_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@mixin malina($style: regular) {
+  @if $style == regular {
+    font-family: als_malina;
+  }
+
+}

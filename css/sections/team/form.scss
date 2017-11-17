@@ -1,0 +1,88 @@
+.form__title {
+  @include malina();
+  font-size: 64px;
+  color: #fffcf9;
+  max-width: 50%;
+  line-height: 1.2;
+  float: left;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 130px;
+}
+
+.form {
+  width: 76.64%;
+  margin: 0 auto;
+  background-image: url("../pics/cupcake/chocolate.jpg");
+  border-radius: 20px;
+
+  @extend %clearfix;
+}
+
+.form__right  {
+  border-radius: 0 20px 20px 0;
+  position: relative;
+  width:  50%;
+  background-color: rgba(29, 29, 32, 0.84);
+  float: right;
+  padding: 60px 45px;
+}
+
+.form__input {
+  color: #fff;
+  background: transparent;
+  display: block;
+  border-bottom: 1px solid  white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+.form__checkbox {
+  cursor: pointer;
+  @include  inlineblock(middle);
+}
+
+.form__checkbox-wrap  {
+  padding-top: 20px;
+}
+
+.form__callback  {
+  cursor: pointer;
+  color: #fff;
+  margin-left: 5px;
+  @include  inlineblock(middle);
+}
+
+.form__btn  {
+  top:  83%;
+  left: 85%;
+  display: block;
+  cursor: pointer;
+  border: 0;
+  width: 96px;
+  height: 96px;
+  background-color: #ffb100;
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #641a00;
+    .btn__arrow {
+      background: url("../pics/cupcake/icons/button-hover.png") no-repeat;
+    }
+  }
+
+  &:active  {
+    transform: translateX(5px);
+  }
+}
+
+.btn__arrow {
+  margin: 0 auto;
+  width: 50px;
+  height: 51px;
+  background: url("../pics/cupcake/icons/button.png") no-repeat;
+}

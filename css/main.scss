@@ -1,0 +1,32 @@
+// variables
+
+$yellow: #fca211;
+$grey: rgb(116, 116, 116);
+$red: #ab594a;
+$dgrey: #393939;
+$red1: #893213;
+ 
+ // imports
+
+@import "_patterns/mixins";
+@import "_patterns/normalize";
+@import "_patterns/adjustment";
+@import "../fonts/stylesheet";
+
+
+
+ // section styles
+@import "sections/cupcake/cupcake";
+@import "sections/cupcake/header";
+@import "sections/tasty/title";
+@import "sections/wedeliver/wedeliver";
+@import "sections/team/team.scss";
+@import "sections/team/form.scss";
+@import "sections/faq/faq.scss";
+@import "sections/cupcake/slider.scss";
+@import "sections/maps/maps.scss";
+@import "sections/footer/footer.scss";
+
+ // adaptive 
+
+ // @import "adaptive/media";

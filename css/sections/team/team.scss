@@ -1,0 +1,142 @@
+.team {
+  background: -webkit-radial-gradient(#fff,#ddd);
+  background: radial-gradient(#fff,#ddd);
+  padding-top: 70px;
+}
+
+.team__top-title {
+  width: 30%;
+  @include inlineblock();
+
+}
+
+.team__top-text  {
+  @include malina();
+  color: #2b2f5f;
+  font-size: 62px;
+  line-height: 1.2;
+  //@include inlineblock();
+}
+
+.staff__list  {
+
+}
+
+.name {
+  @include malina();
+  color: #2b2f5f;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.occupation {
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: $grey;
+  padding: 10px 0 9px 0;
+}
+
+.staff__list-item {
+  @include inlineblock();
+}
+
+.team__top-staff  {
+  width: 60%;
+  @include inlineblock();
+  padding-left: 30px;
+}
+
+.staff__list-item {
+  width:  32%;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+
+}
+
+.staff__list-link {
+  display: block;
+}
+
+.staff__list-item_active, .staff__list-item:hover {
+  background: $red1;
+  transition: 0.3s;
+  .name {
+    color: $yellow;
+  }
+  .occupation {
+    color: white;
+  }
+}
+
+.staff__list-item_active {
+  &:before {
+    content: ' ';
+    top: 100%;
+    left: 43%;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 17px 0 17px;
+    border-color: #893213 transparent transparent transparent;
+    transition: 0.3s;
+  }
+}
+
+.team__middle {
+  padding-top: 30px;
+}
+
+.item__left, .item__photo, .item__right {
+  @include inlineblock();
+  width: 25%;
+
+  p {
+    margin-top: 15px;
+  }
+}
+
+.item__left, .item__right {
+  font-size: 14px;
+  font-family: "Arial";
+  font-style: italic;
+  line-height: 1.5;
+  color: $grey;
+}
+
+.item__photo  {
+  background-image: url("../pics/cupcake/chief.png");
+  background-size: contain;
+  width: 530px;
+  height: 600px;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 87%;
+    left: 23%;
+    width: 50px;
+    height: 41px;
+    background-image: url("../pics/cupcake/icons/quote.png");
+  }
+
+}
+
+.team__bottom {
+  padding-bottom: 100px;
+}
+
+.middle__list-item  {
+  display: none;
+  &.middle__list-item_active  {
+    display: list-item;
+  }
+}
+
+

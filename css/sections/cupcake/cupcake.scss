@@ -1,0 +1,215 @@
+.sweeties {
+  background: -webkit-linear-gradient(left,#cd3438 0,#a3161c 100%);
+  background: linear-gradient(to right,#cd3438 0,#a3161c 100%);
+  padding: 24px 0 36px 0;
+}
+
+.slider__item {
+  position: relative;
+  color: #fff;
+}
+
+.slider__item-bg-text {
+  text-transform: uppercase;
+  @include malina();
+  font-size: 150px;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 1.327;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+.slider__item-content {
+  @extend %clearfix;
+}
+
+.content__left {
+  padding-top: 60px;
+  float: left;
+  width: 18.8%;
+}
+
+.content__left-ingredients  {
+  margin-bottom: 220px;
+}
+
+.content__left-ingredients-link {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50px;
+    height: 100px;
+    width: 60px;
+    top: -10px;
+  }
+
+  &:hover {
+    .ingredients__dropdown  {
+      left: 110px;
+    }
+    .ingredients-link__icon {
+      background-image: url("../pics/cupcake/icons/spritesheet-hover.png");
+      background-position: 205px 0;
+    }
+  }
+}
+
+.ingredients-link__icon {
+  display: inline-block;
+  text-align: center;
+  background-image: url("../pics/cupcake/icons/spritesheet.png");
+  width: 47px;
+  height: 47px;
+  background-position: 205px 0;
+  margin-bottom: 10px;
+  transition: 0.3s;
+
+}
+
+.ingredients-link__text {
+  color: #fff;
+  font-size: 15px;
+  display: block;
+}
+
+.content__left-info {
+  display: inline-block;
+  text-align: center;
+  * {
+    display: block;
+  }
+}
+
+.content__left-info-expiration  {
+    font-size: 13px;
+    font-family: "Arial";
+    color: rgba(255, 255, 255, 0.278);
+}
+
+.content__left-info-date  {
+  @include malina();
+  font-size: 24px;
+  line-height: 1.05;
+}
+
+.content__middle  {
+  float: left;
+  width: 42%;
+  height: 100%;
+  position: relative;
+}
+
+.content__middle-pic  {
+  display: block;
+  max-width: 100%;
+}
+
+.content__right {
+  float: left;
+  width: 37.27%;
+  padding-top: 20px;
+}
+
+.content__right-title {
+  @include malina();
+  font-size: 62px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.content__right-description {
+  font-size: 15px;
+  font-family: "Arial";
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.bot__info  {
+  @include inlineblock(middle);
+  margin-right: 15px;
+}
+
+.bot__info-price  {
+  @include malina();
+  font-size: 62px;
+  color: rgb(255, 255, 255);
+  @include inlineblock(middle);
+  margin-right: 25px;
+}
+
+.bot__info-icon {
+  background: url("../pics/cupcake/icons/ruble.png") 0 0 no-repeat;
+  background-size: contain;
+  width: 36px;
+  height: 36px;
+  @include inlineblock(middle);
+}
+
+.bot__info-order  {
+  color: #AE1E23;
+  background: $yellow;
+  border-radius: 50px;
+  padding: 10px 20px;
+  @include inlineblock(middle);
+  transition: 0.3s;
+
+
+  &:hover {
+    color: $yellow;
+    background: #641a00;
+  }
+}
+
+.ingredients__dropdown  {
+  width: 381px;
+  position: absolute;
+  display: block;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 20px;
+  line-height: 1.42;
+  z-index: 111;
+  padding: 33px 43px 33px 20px;
+  top: -46px;
+  left: 103px;
+  left: -9999px;
+
+  &:before  {
+    top:  53px;
+    left: -13px;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 21px 13px 21px 0;
+    border-color: transparent #ffffff transparent transparent;
+    border-right-color: rgba(255, 255, 255, 0.92)
+  }
+}
+
+.ingredients__table {
+  width: 100%;
+  text-align: left;
+  color: $dgrey;
+}
+
+.body-cells__content-img  {
+  width: 20px;
+  height: 20px;
+}
+
+.table__body-cells  {
+  text-transform: lowercase;
+}
+
+.body-cells__content  {
+  padding-bottom: 10px;
+}
